@@ -2,7 +2,7 @@
 
 //This script is designed to quickly show managers the retail price of a product at the cost presented by a distributor.
 
-//Prompts for variables
+//Prompts for user to input values for cost, discount, and profit margin
 var Cost = parseFloat(prompt("Enter the cost of a case"));
 var CaseDeal = parseFloat(prompt("Enter multi case discount in decimal format"));
 var Markup = parseFloat(prompt("Enter the profit margin in decimal format"));
@@ -31,6 +31,7 @@ alert("If this is a 6 pack, the selling price per item at that cost is " + thePr
 var thePrice2 = CostAdjust / myArray[2] * Markup + (Cost/myArray[2]);
 alert("If this is a 4 pack, the selling price per item at that cost is " + thePrice2);
 
+//Printing solutions to the console
 console.log("If this is a Bomber, the selling price per item at that cost is " + thePrice0)
 console.log("If this is a 6 pack, the selling price per item at that cost is " + thePrice1)
 console.log("If this is a 4 pack, the selling price per item at that cost is " + thePrice2)
