@@ -32,3 +32,14 @@ var thePrice2 = CostAdjust / myArray[2] * Markup + (Cost/myArray[2]);
 alert("If this is a 4 pack, the selling price per item at that cost is " + thePrice2);
 
 console.log("If this is a Bomber, the selling price per item at that cost is " + thePrice0)
+console.log("If this is a 6 pack, the selling price per item at that cost is " + thePrice1)
+console.log("If this is a 4 pack, the selling price per item at that cost is " + thePrice2)
+
+//I typed in a case value of 120 and a discount of 0 with a profit margin of 20% and got a value of $12 for bombers, $36
+// for 6packs and $24 for 4 packs.
+
+//I typed in a case value of 50 and a discount of 10% with a profit margin of 20% and got a value of $5.08 for bombers, $15.25
+// for 6packs and $10.17 for 4 packs.
+
+//I typed in a case value of 35 and a discount of 30% with a profit margin of 20% and got a value of $3.67 for bombers, $11.02
+// for 6packs and $7.35 for 4 packs.
