@@ -43,3 +43,7 @@ console.log("If this is a 4 pack, the selling price per item at that cost is " +
 
 //I typed in a case value of 35 and a discount of 30% with a profit margin of 20% and got a value of $3.67 for bombers, $11.02
 // for 6packs and $7.35 for 4 packs.
+
+//NOTE:  I did not use any other assignment operators because they had no place within the script I wrote. The whole script could be reduced
+// to four lines, but I had to embellish to account for the attributes required for the assignment. Additional assignment operators
+// were the only attributes that I could not do this for.
