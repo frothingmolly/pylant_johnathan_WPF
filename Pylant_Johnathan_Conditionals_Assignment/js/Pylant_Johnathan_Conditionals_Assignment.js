@@ -2,6 +2,10 @@
 
 //This script is designed to quickly show managers the retail price of a product at the cost presented by a distributor.
 
+//Introduction
+var Intro = document.write("So, you are looking to make a few life-changes. This application will assist in finding " +
+    "an ideal location to live. Refrain from using dollar signs or commas, please. Now, Let's get started!")
+
 //Variables for location, salary, cost of living and housing.
 var Location = prompt("Please, enter desired location.");
 var Salary = Number(prompt("Enter expected salary for new job."));
@@ -85,21 +89,20 @@ else {
     else {
         console.log(Location + " had a take home of " + Compare + ", while " + Location2 + " had a take home of " +
             Compare2 + ".");
-    }
 
 //Equations to establish the difference between the better and lesser locations.
-    var L1 = Number(Compare - Compare2);
-    var L2 = Number(Compare2 - Compare);
+        var L1 = Number(Compare - Compare2);
+        var L2 = Number(Compare2 - Compare);
 //Showing the difference between the better location and the lesser location.
 
-    if (Compare > Compare2) {
-        console.log(Location + " is the better choice because you were left with $" + L1 + " more cash in hand " +
-            "than in " + Location2 + ".");
-    }
+        if (Compare > Compare2) {
+            console.log(Location + " is the better choice because you were left with $" + L1 + " more cash in hand " +
+                "than in " + Location2 + ".");
+        }
 
-    if (Compare < Compare2) {
-        console.log(Location2 + " is the better choice because you were left with $" + L2 + " more cash in hand " +
-            "than in " + Location + ".");
+        if (Compare < Compare2) {
+            console.log(Location2 + " is the better choice because you were left with $" + L2 + " more cash in hand " +
+                "than in " + Location + ".");
+        }
     }
-
 }
