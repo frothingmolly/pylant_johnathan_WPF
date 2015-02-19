@@ -1,10 +1,10 @@
-//NAME: Pylant, Johnathan DATE: February 18, 2015 ASSIGNMENT: Conditionals
+//Pylant, Johnathan February 18, 2015 Conditionals
 
 //This script is designed to quickly show managers the retail price of a product at the cost presented by a distributor.
 
 //Introduction
-var Intro = document.write("So, you are looking to make a few life-changes. This application will assist in finding " +
-    "an ideal location to live. Refrain from using dollar signs or commas, please. Now, Let's get started!")
+var Intro = confirm("So, you are looking to make a few life-changes. This application will assist in finding " +
+    "an ideal location to live. Please, refrain from using dollar signs or commas. Now, Let's get started!")
 
 //Variables for location, salary, cost of living and housing.
 var Location = prompt("Please, enter desired location.");
