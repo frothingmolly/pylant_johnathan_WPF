@@ -19,7 +19,6 @@ var Extra2;
 var COL2;
 var House2;
 var Choose;
-var TryAgain;
 
 //Equations for establishing monthly income and comparing income to expenses for desired location.
 var Income= Number(Salary + Extra)/12;
