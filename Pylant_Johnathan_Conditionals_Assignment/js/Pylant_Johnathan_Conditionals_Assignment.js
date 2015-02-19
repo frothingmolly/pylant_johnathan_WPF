@@ -3,7 +3,7 @@
 //This script is designed to quickly show managers the retail price of a product at the cost presented by a distributor.
 
 //Introduction
-var Intro = prompt("So, you are looking to make a few life-changes. This application will assist in finding " +
+var Intro = alert("So, you are looking to make a few life-changes. This application will assist in finding " +
     "an ideal location to live. Please, refrain from using dollar signs or commas. Now, Let's get started!")
 
 //Variables for location, salary, cost of living and housing.
@@ -27,7 +27,7 @@ var Expenses= Number(COL+House);
 var Compare= Number(Income - Expenses);
 
 //Output showing equation above.
-console.log(Income + "-" + Expenses + "=" + Compare);
+console.log(Income + "-" + Expenses + "= " + Compare);
 
 //Conditionals for expressing comparison of income and expense for desired location.
 if (Compare >= 1000) {
@@ -48,10 +48,7 @@ else {
 }
 
 //Conditional driving prompts for acquiring information on next location or sign off if not desired.
-if (Location2 === false) {
-    console.log("Thank you for your time and good luck on your future venture.");
-}
-else {
+if (Location2 === true) {
     Location2 = prompt("Please, enter the new location.");
     Salary2 = Number(prompt("Enter expected salary for new job."));
     Extra2 = Number(prompt("Enter additional income, if applicable. If not, enter 0."));
@@ -65,7 +62,7 @@ else {
     var Compare2 = Number(Income2 - Expenses2);
 
 //Output showing equation above.
-    console.log(Income2 + "-" + Expenses2 + "=" + Compare2);
+    console.log(Income2 + "-" + Expenses2 + "= " + Compare2);
 
 //Conditional for expressing comparison and expense for second location.
     if (Compare2 >= 1000) {
@@ -87,7 +84,7 @@ else {
         console.log("Thank you for your time and good luck on your future venture.");
     }
     else {
-        
+
 //Equations to establish the difference between the better and lesser locations.
         var L1 = Number(Compare - Compare2);
         var L2 = Number(Compare2 - Compare);
@@ -103,4 +100,8 @@ else {
                 "than in " + Location + ".");
         }
     }
+}
+
+else {
+    console.log("Thank you for your time and good luck on your future venture.");
 }
