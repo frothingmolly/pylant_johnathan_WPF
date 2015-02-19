@@ -1,9 +1,9 @@
-//Pylant, Johnathan February 18, 2015 Conditionals
+//NAME: Pylant, Johnathan DATE: February 18, 2015 ASSIGNMENT: Expressions
 
 //This script is designed to quickly show managers the retail price of a product at the cost presented by a distributor.
 
 //Introduction
-var Intro = confirm("So, you are looking to make a few life-changes. This application will assist in finding " +
+var Intro = prompt("So, you are looking to make a few life-changes. This application will assist in finding " +
     "an ideal location to live. Please, refrain from using dollar signs or commas. Now, Let's get started!")
 
 //Variables for location, salary, cost of living and housing.
@@ -87,9 +87,7 @@ else {
         console.log("Thank you for your time and good luck on your future venture.");
     }
     else {
-        console.log(Location + " had a take home of " + Compare + ", while " + Location2 + " had a take home of " +
-            Compare2 + ".");
-
+        
 //Equations to establish the difference between the better and lesser locations.
         var L1 = Number(Compare - Compare2);
         var L2 = Number(Compare2 - Compare);
