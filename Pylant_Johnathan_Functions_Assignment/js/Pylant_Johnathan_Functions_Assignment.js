@@ -75,7 +75,7 @@ function FLNumbers(){
             FL6 = ++FL6;
         }
     //Printing winning FL lotto numbers to the console
-    var FLdWinningNumbers= console.log("The winning numbers are "+FL1+", "+FL2+", "+FL3+", "+FL4+", "+FL5+", "+FL6);
+    var FLdWinningNumbers= console.log("The winning Florida Lotto numbers are "+FL1+", "+FL2+", "+FL3+", "+FL4+", "+FL5+", "+FL6);
 }
 //Function validating input for Powerball prompt
 function PBNvalidation(){
@@ -127,7 +127,7 @@ function PBNumbers(){
             PB6 = ++PB6;
         }
     //Printing winning Powerball numbers to the console
-    var PBdWinningNumbers = console.log("The winning numbers are "+PB1+", "+PB2+", "+PB3+", "+PB4+", "+PB5+", " +
+    var PBdWinningNumbers = console.log("The winning Powerball numbers are "+PB1+", "+PB2+", "+PB3+", "+PB4+", "+PB5+", " +
         "and the POWER PLAY is "+PB6);
 }
 //MAIN CODE
@@ -153,3 +153,34 @@ else{
             console.log("Thanks for playing.");
         }
 }
+//<TESTING APPLICATION OF PRODUCT>
+//Typed "yes" to FLlotto prompt...
+//[Log] The winning Florida Lotto numbers are 34, 22, 32, 16, 13, 12 (Pylant_Johnathan_Functions_Assignment.js, line 78)
+
+//Typed "YES" to PBlotto prompt...
+//[Log] The winning Powerball numbers are 10, 48, 3, 57, 12, and the POWER PLAY is 23 (Pylant_Johnathan_Functions_Assignment.js, line 130)
+
+//Left FLlotto prompt field blank and clicked okay until error printed to console...
+//[Log] ERROR1: I'm not clairvoyant, but if you play the lotto like you answer questions, I am pretty sure you didn't win. (Pylant_Johnathan_Functions_Assignment.js, line 41)
+//The PBlotto prompt follow the error and "Yes" was typed into field...
+//[Log] The winning Powerball numbers are 12, 2, 26, 0, 45, and the POWER PLAY is 7 (Pylant_Johnathan_Functions_Assignment.js, line 130)
+
+//Left FLlotto prompt field blank and clicked okay until error printed to console...
+//[Log] ERROR1: I'm not clairvoyant, but if you play the lotto like you answer questions, I am pretty sure you didn't win. (Pylant_Johnathan_Functions_Assignment.js, line 41)
+//The PBlotto prompt followed; left PBlotto prompt field blank and clicked okay until error printed to console...
+//[Log] ERROR1: I'm not clairvoyant, but if you play the lotto like you answer questions, I am pretty sure you didn't win. (Pylant_Johnathan_Functions_Assignment.js, line 93)
+//and because user didn't respond positively to either lotto prompt, this salutation was given after both errors...
+//[Log] Thanks for playing. (Pylant_Johnathan_Functions_Assignment.js, line 153)
+
+//Typed "no" and "NO" into both prompts, respectively, giving me sign-off salutation...
+//[Log] Thanks for playing. (Pylant_Johnathan_Functions_Assignment.js, line 153)
+
+//Typed "No" into FLlotto prompt and "YES" into PBlotto prompt. Received below error because the third number matched the second number generated...
+//[Log] ERROR3: No two numbers are alike. (Pylant_Johnathan_Functions_Assignment.js, line 114)
+//I know which number because of the title of the error and that the third number directly succeeds the second.
+//[Log] The winning Powerball numbers are 21, 13, 14, 37, 45, and the POWER PLAY is 32 (Pylant_Johnathan_Functions_Assignment.js, line 130)
+
+//Typed "yes" into the FLlotto prompt and received below error because the fifth number matched the third number generated...
+//[Log] ERROR5: No two numbers are alike. (Pylant_Johnathan_Functions_Assignment.js, line 70)
+//I know this because of the title of the error and because the fifth number directly succeeds the third number.
+//[Log] The winning Florida Lotto numbers are 35, 9, 44, 13, 45, 1 (Pylant_Johnathan_Functions_Assignment.js, line 78)
