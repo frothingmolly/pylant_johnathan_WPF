@@ -130,3 +130,26 @@ function PBNumbers(){
     var PBdWinningNumbers = console.log("The winning numbers are "+PB1+", "+PB2+", "+PB3+", "+PB4+", "+PB5+", " +
         "and the POWER PLAY is "+PB6);
 }
+//MAIN CODE
+//Initiates the validation for the FLlotto prompt from line5
+FLNvalidation();
+//Conditional: If user states yes to prompt, the below function is initiated to generate the random numbers and printed
+//to the console
+if (FLlotto === "yes" || FLlotto==="Yes" || FLlotto==="YES"){
+    FLNumbers();
+}
+//If the user does not want to see the FL lotto numbers, the function that drives the prompt for Powerball Lotto is
+//initiated below
+else{
+    var PBlotto = prompt("Would you like to see the WINNING Powerball Numbers?");
+    //Initiates the validation function for the PBlotto prompt
+    PBNvalidation();
+        //IF user states yes, the below function is initiated to generate the random numbers and printed to the console
+        if (PBlotto==="Yes" || PBlotto==="yes" || PBlotto==="YES"){
+            PBNumbers();
+        }
+        //If the user does not want to see the winning Powerball numbers, the below statement is presented
+        else{
+            console.log("Thanks for playing.");
+        }
+}
