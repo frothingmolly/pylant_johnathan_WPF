@@ -77,3 +77,22 @@ function FLNumbers(){
     //Printing winning FL lotto numbers to the console
     var FLdWinningNumbers= console.log("The winning numbers are "+FL1+", "+FL2+", "+FL3+", "+FL4+", "+FL5+", "+FL6);
 }
+//Function validating input for Powerball prompt
+function PBNvalidation(){
+    //Establishes a start count to go toward break-code below
+    var PBrepeat = 1;
+    //If the PBlotto filed is left blank, the below error will run and prompt the user for input a few more times.
+    while (PBlotto === ""){
+        PBlotto = prompt("ERROR0: Do not leave this blank. \nI cannot help you if you do not tell me what you want." +
+        " \nWould you like to see the WINNING Powerball Numbers?");
+        //Adds to the established count above
+        PBrepeat = PBrepeat +1;
+            //When the user fails to fill out the prompt enough times, the below error message is presented and the
+            //loop is broken.
+            if (PBrepeat === 4){
+                console.log("ERROR1: I'm not clairvoyant, but if you play the lotto like you answer questions, I am " +
+                "pretty sure you didn't win.");
+                break;
+            }
+    }
+}
