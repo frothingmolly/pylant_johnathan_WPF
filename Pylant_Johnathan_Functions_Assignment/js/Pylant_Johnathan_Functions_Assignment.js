@@ -44,3 +44,36 @@ function FLNvalidation(){
             }
     }
 }
+//Function establishing random numbers for lotto
+function FLNumbers(){
+    //Recalling variables from above and establishing values for randomizing winning numbers
+    var FL1 = Math.floor(Math.random() * 53);
+    var FL2 = Math.floor(Math.random() * 53);
+    var FL3 = Math.floor(Math.random() * 53);
+    var FL4 = Math.floor(Math.random() * 53);
+    var FL5 = Math.floor(Math.random() * 53);
+    var FL6 = Math.floor(Math.random() * 53);
+        //Loop to ensure unique lotto numbers
+        while (FL2===FL1){
+            console.log("ERROR2: No two numbers are alike.");
+            FL2 = ++FL2;
+        }
+        while (FL3===FL2 || FL3===FL1){
+            console.log("ERROR3: No two numbers are alike.");
+            FL3 = ++FL3;
+        }
+        while (FL4===FL3 || FL4===FL2 || FL4===FL1){
+            console.log("ERROR4: No two numbers are alike.");
+            FL4 = ++FL4;
+        }
+        while (FL5===FL4 || FL5===FL4 || FL5===FL3 || FL5===FL2 || FL5===FL1){
+            console.log("ERROR5: No two numbers are alike.");
+            FL5 = ++FL5;
+        }
+        while (FL6===FL5 || FL6===FL4 || FL6===FL3 || FL6===FL2 || FL6===FL1){
+            console.log("ERROR6: No two numbers are alike.");
+            FL6 = ++FL6;
+        }
+    //Printing winning FL lotto numbers to the console
+    var FLdWinningNumbers= console.log("The winning numbers are "+FL1+", "+FL2+", "+FL3+", "+FL4+", "+FL5+", "+FL6);
+}
