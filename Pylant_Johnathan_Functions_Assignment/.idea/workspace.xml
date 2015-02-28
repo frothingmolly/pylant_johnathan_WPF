@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="785a90ab-d03d-4966-8c03-1744406d8f21" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Pylant_Johnathan_Functions_Assignment.js" afterPath="$PROJECT_DIR$/js/Pylant_Johnathan_Functions_Assignment.js" />
-    </list>
+    <list default="true" id="785a90ab-d03d-4966-8c03-1744406d8f21" name="Default" comment="" />
     <ignored path="Pylant_Johnathan_Conditionals_Assignment.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +37,8 @@
       <file leaf-file-name="Pylant_Johnathan_Functions_Assignment.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/Pylant_Johnathan_Functions_Assignment.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8569157" vertical-offset="2236" max-vertical-offset="2865">
-              <caret line="185" column="45" selection-start-line="185" selection-start-column="45" selection-end-line="185" selection-end-column="45" />
+            <state vertical-scroll-proportion="1.6677265" vertical-offset="1726" max-vertical-offset="2865">
+              <caret line="185" column="118" selection-start-line="185" selection-start-column="118" selection-end-line="185" selection-end-column="118" />
               <folding />
             </state>
           </provider>
@@ -211,8 +209,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Pylant_Johnathan_Functions_Assignment.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8569157" vertical-offset="2236" max-vertical-offset="2865">
-          <caret line="185" column="45" selection-start-line="185" selection-start-column="45" selection-end-line="185" selection-end-column="45" />
+        <state vertical-scroll-proportion="1.6677265" vertical-offset="1726" max-vertical-offset="2865">
+          <caret line="185" column="118" selection-start-line="185" selection-start-column="118" selection-end-line="185" selection-end-column="118" />
           <folding />
         </state>
       </provider>
