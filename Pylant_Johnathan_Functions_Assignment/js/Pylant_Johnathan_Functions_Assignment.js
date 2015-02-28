@@ -46,7 +46,7 @@ function FLNvalidation(){
 }
 //Function establishing random numbers for lotto
 function FLNumbers(){
-    //Recalling variables from above and establishing values for randomizing winning numbers
+    //Recalling variables from above and establishing values for randomizing winning FL lotto numbers
     var FL1 = Math.floor(Math.random() * 53);
     var FL2 = Math.floor(Math.random() * 53);
     var FL3 = Math.floor(Math.random() * 53);
@@ -95,4 +95,38 @@ function PBNvalidation(){
                 break;
             }
     }
+}
+//Function establishing random numbers for Powerball
+function PBNumbers(){
+    //Recalling variables from above and establishing values for randomizing winning Powerball numbers
+    var PB1 = Math.floor(Math.random() * 59);
+    var PB2 = Math.floor(Math.random() * 59);
+    var PB3 = Math.floor(Math.random() * 59);
+    var PB4 = Math.floor(Math.random() * 59);
+    var PB5 = Math.floor(Math.random() * 59);
+    var PB6 = Math.floor(Math.random() * 35);
+        //Loop ensuring unique Powerball numbers
+        while (PB2===PB1){
+            console.log("ERROR2: No two numbers are alike.");
+            PB2 = ++PB2;
+        }
+        while (PB3===PB2 || PB3===PB1){
+            console.log("ERROR3: No two numbers are alike.");
+            PB3 = ++PB3;
+        }
+        while (PB4===PB3 || PB4===PB2 || PB4===PB1){
+            console.log("ERROR4: No two numbers are alike.");
+            PB4 = ++PB4;
+        }
+        while (PB5===PB4 || PB5===PB3 || PB5===PB2 || PB5===PB1){
+            console.log("ERROR5: No two numbers are alike.");
+            PB5 = ++PB5;
+        }
+        while (PB6===PB5 || PB6===PB4 || PB6===PB3 || PB6===PB2 || PB6===PB1){
+            console.log("ERROR6: No two numbers are alike.");
+            PB6 = ++PB6;
+        }
+    //Printing winning Powerball numbers to the console
+    var PBdWinningNumbers = console.log("The winning numbers are "+PB1+", "+PB2+", "+PB3+", "+PB4+", "+PB5+", " +
+        "and the POWER PLAY is "+PB6);
 }
